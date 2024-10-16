@@ -1,3 +1,3 @@
 # a simple rpc package
 
-$ fast,simple
+# fast,simple
