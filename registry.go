@@ -41,7 +41,7 @@ func (r *Registry) GetMethod(name string) (RPCMethod, bool) {
 }
 
 // wrapFunction 将普通函数包装成符合RPCMethod接口的结构体
-func wrapFunction(name string, fn interface{}) RPCMethod {
+func WrapFunction(name string, fn interface{}) RPCMethod {
     fnValue := reflect.ValueOf(fn)
     fnType := fnValue.Type()
 
